@@ -20,7 +20,12 @@ dependencyResolutionManagement {
 }
 
 
+
+include("app")
+include("business-logic")
+include("data-model")
+
 // Alternate way to include modules such as `app` ,`business-logic` & `data-model`
-rootDir.listFiles()?.filter { it.isDirectory && !it.isHidden}?.forEach{ projectPath ->
+/*rootDir.listFiles()?.filter { it.isDirectory && !it.isHidden}?.forEach{ projectPath ->
     include(projectPath.name)
-}
+}*/
